@@ -10,6 +10,18 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/homelogin.css">
+    
+    <!-- Link bootstrap template -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 
     <title>Hello, world!</title>
   </head>
@@ -48,32 +60,85 @@
     </div>
 
     <!-- File -->
-    <div class="card ml-5" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">Catatan Biologi</h5>
-            <a href="#" class="btn btn-primary">View</a>
+    <div class="container-card">
+        <div class="card ml-5" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/card/computer.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Catatan Pemrograman berbasis web</h5>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+        </div>
+        <div class="card ml-5" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/card/math.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Catatan Matematika</h5>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+        </div>
+        <div class="card ml-5" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/card/science.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Catatan Fisika</h5>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+        </div>
+        <div class="card ml-5" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/card/science.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Catatan Biologi</h5>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+        </div>
+        <div class="card ml-5" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/card/computer.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Catatan Hardware</h5>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+        </div>
+        <div class="card ml-5" style="width: 18rem;">
+            <img class="card-img-top" src="assets/img/card/computer.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title text-center">Catatan Jarkom</h5>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
         </div>
     </div>
-    <div class="card ml-5" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">Catatan Biologi</h5>
-            <a href="#" class="btn btn-primary">View</a>
+
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-left cr">Copyright © AMBS 2021</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/putra_andhika7"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-right">
+                    <a class="mr-3" href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Use</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="card ml-5" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title text-center">Catatan Biologi</h5>
-            <a href="#" class="btn btn-primary">View</a>
-        </div>
-    </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcbdn.com/ootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!-- Link bootstrapjs template -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
   </body>
 </html>
