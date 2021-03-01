@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/homelogin.css">
+    <link rel="stylesheet" href="css/mynotes.css">
     
     <!-- Link bootstrap template -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -23,7 +23,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <title>Hello, world!</title>
+    <title>My Notes</title>
   </head>
   <body>
     <div class="wrap">
@@ -57,7 +57,18 @@
 
     <!-- Recent -->
     <div class="text-center">
-        <h2 class="section-heading mt-4">Recent Notes</h2><br><br>
+        <h2 class="section-heading mt-4">My Notes</h2><br><br>
+    </div>
+
+    <!-- Button -->
+    <div class="container-button">
+        <a href="formnote.php" class="btn btn-success">+Add new note</a>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option selected>Category</option>
+            <option value="1">Math</option>
+            <option value="2">Science</option>
+            <option value="3">Computer</option>
+        </select>
     </div>
 
     <!-- File -->

@@ -15,9 +15,25 @@ nav .container .collapse .nav-item .nav-link {
     color: white;
 }
 
-.container-card {
+.container-button {
     max-width: 1200px;
     margin: 10px auto;
+}
+
+.container-button .btn {
+    width: 230px;
+    text-align: left;
+    margin-left: 98px;
+}
+
+.container-button .custom-select {
+    width: 130px;
+    margin-left: 20px;
+}
+
+.container-card {
+    max-width: 1200px;
+    margin: 30px auto;
     padding-bottom: 200px;
 }
 

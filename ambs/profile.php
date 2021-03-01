@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/homelogin.css">
+    <link rel="stylesheet" href="css/profile.css">
     
     <!-- Link bootstrap template -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -55,33 +55,14 @@
         </div>
     </nav>
 
-    <!-- Recent -->
+    <!-- Profile -->
     <div class="text-center">
-        <h2 class="section-heading mt-4">Recent Notes</h2><br><br>
+            <h2 class="section-heading mt-4">Profile</h2><br><br>
     </div>
 
-    <!-- File -->
-    <div class="container-card">
-        <div class="card ml-5" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/card/computer.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title text-center">Catatan Pemrograman berbasis web</h5>
-                <a href="#" class="btn btn-primary">View</a>
-            </div>
-        </div>
-        <div class="card ml-5" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/card/math.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title text-center">Catatan Matematika</h5>
-                <a href="#" class="btn btn-primary">View</a>
-            </div>
-        </div>
-        <div class="card ml-5" style="width: 18rem;">
-            <img class="card-img-top" src="assets/img/card/science.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title text-center">Catatan Fisika</h5>
-                <a href="#" class="btn btn-primary">View</a>
-            </div>
+    <div class="container-profile">
+        <div class="profilepict">
+            <img src="assets/img/profilepict.jpg">
         </div>
     </div>
 

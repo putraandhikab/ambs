@@ -15,20 +15,22 @@ nav .container .collapse .nav-item .nav-link {
     color: white;
 }
 
-.container-card {
+.container-form {
     max-width: 1200px;
-    margin: 10px auto;
-    padding-bottom: 200px;
+    margin: 50px auto;
 }
 
-.container-card .card {
-    margin-bottom: 40px;
-    box-sizing: border-box;
+.container-form .form-group.title input {
+    width: 500px;
 }
 
-.card-body a {
-    margin-left: 90px;
-}
+
+
+
+
+
+
+
 
 .footer {
     width: 100%;
@@ -42,13 +44,4 @@ nav .container .collapse .nav-item .nav-link {
 
 .footer .cr{
     color: #ffff;
-}
-
-/* Responsive */
-@media(min-width: 600px) {
-    .container-card {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
 }
