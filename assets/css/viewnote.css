@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    position: relative;
+}
+
+.navbar a {
+    color: yellow;
+}
+
+nav .container .collapse .nav-item .nav-link {
+    color: white;
+}
+
+.container-form {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding-bottom: 200px;
+}
+
+.container-form form .delete {
+    display: flex;
+    flex-direction: row;
+    margin-left: 97%;
+    margin-top: -40px;
+}
+
+.container-form form .title-category {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-form .form-group.title input {
+    width: 400px;
+}
+
+.container-form .input-group {
+    padding-left: 100px;
+}
+
+.container-form .uploadnote {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.container-form .uploadnote label {
+    margin-right: 30px;
+}
+
+.container-form .formbtn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form .formbtn .btn {
+    margin-right: 30px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #040505;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer .cr{
+    color: #ffff;
+}
+
+.btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+}
+
+a {
+    color: #fed136;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #e6b301;
+    text-decoration: underline;
+}
+
+a:not([href]):not([class]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}

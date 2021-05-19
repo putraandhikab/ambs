@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    position: relative;
+}
+
+.navbar a {
+    color: yellow;
+}
+
+nav .container .collapse .nav-item .nav-link {
+    color: white;
+}
+
+.container-button {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+
+.container-button .btn {
+    width: 230px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.container-button .custom-select {
+    width: 130px;
+    margin-left: 20px;
+}
+
+.container-card {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding-bottom: 200px;
+}
+
+.container-card .card {
+    margin-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.card-body a {
+    margin-left: 90px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #040505;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: absolute;
+    bottom: 0px;
+}
+
+.footer .cr{
+    color: #ffff;
+}
+
+/* Responsive */
+@media(min-width: 600px) {
+    .container-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .container-button .btn {
+        width: 230px;
+        text-align: left;
+        margin-left: 98px;
+    }
+}
