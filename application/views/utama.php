@@ -318,6 +318,26 @@
 
         <?= $this->session->flashdata('message'); ?>
 
+        <!-- Modal Update Password Sukses-->
+        <div class="modal fade" id="passupdateSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Password berhasil diubah!</h5>
+                <button type="button" class="close" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Silahkan melakukan login ulang.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal">OK</a>
+            </div>
+            </div>
+        </div>
+        </div>
+
         <!-- Modal Update Profile Sukses-->
         <div class="modal fade" id="updateSuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">

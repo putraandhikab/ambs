@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>assets/css/homelogin.css">
+    <link rel="stylesheet" href="<?= base_url() ?>assets/css/changepass.css">
     
     <!-- Link bootstrap template -->
     <link rel="icon" type="image/x-icon" href="<?= base_url() ?>assets/img/favicon.ico" />
@@ -20,12 +20,12 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="<?= base_url() ?>assets/css/styles.css" rel="stylesheet" />
 
     <title>Hello, world!</title>
   </head>
   <body>
+    <?= $this->session->flashdata('message'); ?>
+    
     <div class="wrap">
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container">
@@ -37,40 +37,47 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mr-3">
                     <li class="nav-item active mr-3">
-                        <a class="nav-link" href="<?= base_url() ?>homelogin">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="homelogin.php">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active mr-3">
                         <a class="nav-link" href="#">Library <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active mr-3">
-                        <a class="nav-link" href="<?= base_url() ?>mynotes">My Notes <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="mynotes.php">My Notes <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active mr-3">
-                        <a class="nav-link" href="<?= base_url() ?>profile">Profile <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="profile.php">Profile <span class="sr-only">(current)</span></a>
                     </li>
                     
                 </ul>
-                <a href="<?= base_url('utama/logout'); ?>" class="btn btn-danger my-2 my-sm-0">Log Out</a>
+                <button class="btn btn-danger my-2 my-sm-0" type="submit">Log Out</button>
             </div>
         </div>
     </nav>
 
-    <!-- Recent -->
-    <div class="text-center">
-        <h2 class="section-heading mt-4">Recent Notes</h2><br><br>
-    </div>
-
-    <!-- File -->
-    <div class="container-card">
-        <?php foreach($note as $n) { ?>
-            <div class="card ml-5" style="width: 18rem;">
-                <img class="card-img-top" src="<?= base_url() ?>assets/img/card/<?= $n->kategori ?>.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-center"><?= $n->judul ?></h5>
-                    <a href="<?= base_url() ?>mynotes/view/<?= $n->id ?>" class="btn btn-primary">View</a>
-                </div>
+    <!-- Form Change Password -->
+    <div class="container-form">
+        <h1>Change Password</h1>
+        <form action="<?= base_url() ?>profile/editpassprocess" method="post">
+            <div class="form-group title">
+                <label for="exampleInputPassword1">Current Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Current Password" name="current">
+                <input type="hidden" class="form-control" id="exampleInputPassword1" value="<?= $this->session->userdata('id_user') ?>" name="id_user">
             </div>
-        <?php } ?>
+            <div class="form-group title">
+                <label for="exampleInputPassword1">New Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="New Password" name="newpass">
+            </div>
+            <div class="form-group title">
+                <label for="exampleInputPassword1">Confirm New Password</label>
+                <?= form_error('confirmpass', '<small class="text-danger">', '</small>'); ?>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm New Password" name="confirmpass">
+            </div>
+            <div class="formbtn">
+                <a href="mynotes.php" class="btn btn-primary">Back</a>
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </div>
+        </form>
     </div>
 
     <!-- Footer-->
@@ -109,5 +116,6 @@
         <script src="<?= base_url() ?>assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="<?= base_url() ?>assets/js/scripts.js"></script>
+
   </body>
 </html>

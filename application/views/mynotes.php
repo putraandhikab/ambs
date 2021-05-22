@@ -77,7 +77,7 @@
     <div class="container-card">
         <?php foreach($note as $n) { ?>
         <div class="card ml-5" style="width: 18rem;">
-            <img class="card-img-top" src="<?= base_url() ?>assets/img/card/computer.jpg" alt="Card image cap">
+            <img class="card-img-top" src="<?= base_url() ?>assets/img/card/<?= $n->kategori ?>.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title text-center"><?= $n->judul ?></h5>
                 <a href="<?= base_url() ?>mynotes/view/<?= $n->id ?>" class="btn btn-primary">View</a>

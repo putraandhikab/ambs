@@ -61,24 +61,28 @@
     </div>
 
     <div class="container-profile">
-        <div class="profilepict">
-            <img src="<?= base_url() ?>assets/img/profilepict.jpg">
-            <a href="">Change Profile Picture</a>
-        </div>
         <div class="formprofile">
-            <form action="<?= base_url() ?>profile/edit" method="post">
-            <div class="form-group">
-                <label for="exampleInputPassword1">Name  :</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" value="<?= $this->session->userdata('fullname'); ?>" name="fullname">
-                <input type="hidden" class="form-control" id="exampleInputPassword1" value="<?= $this->session->userdata('id_user'); ?>" name="id_user">
+            <!-- <form action="<?= base_url() ?>profile/edit" method="post"> -->
+            <?php echo form_open_multipart('profile/edit');?>
+            <div class="profilepict">
+                <!-- <img src="<?= base_url() ?>assets/img/profile/profilepict.jpg"> -->
+                <img src="<?= base_url('assets/img/profile/') . $this->session->userdata('foto'); ?>">
+                <input type="file" name="foto">
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Username  :</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" value="<?= $this->session->userdata('username'); ?>" name="username">
+            <div class="formtext">
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Name  :</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" value="<?= $this->session->userdata('fullname'); ?>" name="fullname">
+                    <input type="hidden" class="form-control" id="exampleInputPassword1" value="<?= $this->session->userdata('id_user'); ?>" name="id_user">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Username  :</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" value="<?= $this->session->userdata('username'); ?>" name="username">
+                </div>
+                <a href="<?= base_url() ?>profile/editpass">Change Password</a><br>
+                <button type="reset" class="btn btn-danger">Reset</button>
+                <button type="submit" class="btn btn-primary">Edit</button>
             </div>
-            <a href="">Change Password</a><br>
-            <button type="reset" class="btn btn-danger">Reset</button>
-            <button type="submit" class="btn btn-primary">Edit</button>
             </form>
         </div>
     </div>

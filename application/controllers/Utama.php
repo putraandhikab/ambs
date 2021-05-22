@@ -51,6 +51,7 @@ class Utama extends CI_Controller {
                     'id_user' => $user['id_user'],
                     'fullname' => $user['fullname'],
                     'username' => $user['username'],
+                    'password' => $user['password'],
                     'foto' => $user['foto'],
                     'is_logged' => TRUE
                 ];
